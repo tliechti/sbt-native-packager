@@ -27,4 +27,6 @@ trait JavaAppKeys {
          |  APP_DEFINES - the defines to go into the app
          |  """.stripMargin
   )
+
+  val maintainerScripts = TaskKey[Map[String, Seq[String]]]("maintainerScripts", "Scripname to content lines")
 }
