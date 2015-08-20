@@ -5,14 +5,14 @@ package archetypes
 import sbt._
 import sbt.Keys.{ target, mainClass, sourceDirectory, streams, javaOptions, run }
 import SbtNativePackager.{ Debian, Rpm, Universal }
-import packager.Keys.{ packageName }
+import packager.Keys.{ packageName, maintainerScripts }
 import linux.{ LinuxFileMetaData, LinuxPackageMapping, LinuxSymlink, LinuxPlugin }
 import linux.LinuxPlugin.autoImport._
 import debian.DebianPlugin
 import debian.DebianPlugin.autoImport.{ debianMakePreinstScript, debianMakePostinstScript, debianMakePrermScript, debianMakePostrmScript }
 import rpm.RpmPlugin
 import rpm.RpmPlugin.autoImport.{ rpmScriptsDirectory, RpmConstants }
-import JavaAppPackaging.autoImport.{ bashScriptConfigLocation, bashScriptEnvConfigLocation, maintainerScripts }
+import JavaAppPackaging.autoImport.{ bashScriptConfigLocation, bashScriptEnvConfigLocation }
 
 /**
   * This class contains the default settings for creating and deploying an archetypical Java application.

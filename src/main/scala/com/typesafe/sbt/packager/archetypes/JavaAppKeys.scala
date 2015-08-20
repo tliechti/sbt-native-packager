@@ -28,5 +28,4 @@ trait JavaAppKeys {
          |  """.stripMargin
   )
 
-  val maintainerScripts = TaskKey[Map[String, Seq[String]]]("maintainerScripts", "Scripname to content lines")
 }

@@ -128,8 +128,8 @@ object JavaAppPackaging extends AutoPlugin with JavaAppStartScript {
         val d = target / installLocation
         d.mkdirs()
         LinuxPackageMapping(Seq(d -> (installLocation + "/" + name)), LinuxFileMetaData())
-    },
-    maintainerScripts := Map()
+    }
+   
   )
 
   private def makeRelativeClasspathNames(mappings: Seq[(File, String)]): Seq[String] =
